@@ -51,7 +51,7 @@ export function Navigation() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-gray-800 hover:text-green-600 transition-colors duration-200"
+                className="text-green-800 hover:text-green-600 transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -65,7 +65,7 @@ export function Navigation() {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800"
+              className="text-green-600"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -85,7 +85,7 @@ export function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-800 hover:text-green-600 transition-colors duration-200"
+                  className="block px-3 py-2 text-green-800 hover:text-green-600 transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

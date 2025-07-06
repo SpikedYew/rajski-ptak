@@ -87,7 +87,7 @@ export function ContactSection() {
                   />
                   <div>
                     <p className="font-medium text-slate-800">Telefon</p>
-                    <p className="text-slate-600">+48 533 320 515</p>
+                    <p className="text-slate-600">+48 797 372 993</p>
                   </div>
                 </div>
 
@@ -98,7 +98,9 @@ export function ContactSection() {
                   />
                   <div>
                     <p className="font-medium text-slate-800">Email</p>
-                    <p className="text-slate-600">kontakt@twojafirma.pl</p>
+                    <p className="text-slate-600">
+                      rajskiptakkontakt@gmail.com
+                    </p>
                   </div>
                 </div>
 
@@ -111,7 +113,7 @@ export function ContactSection() {
                     <p className="font-medium text-slate-800">
                       Godziny Otwarcia
                     </p>
-                    <p className="text-slate-600">Pon-Pt: 8:00–15:00</p>
+                    <p className="text-slate-600">Pon-Pt: 8:00–16:00</p>
                   </div>
                 </div>
               </CardContent>
@@ -124,7 +126,7 @@ export function ContactSection() {
                 className="bg-white text-slate-800"
               >
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/maria_helena_gancarek"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -137,7 +139,7 @@ export function ContactSection() {
                 className="bg-white text-slate-800"
               >
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/profile.php?id=100015977557888"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -156,7 +158,7 @@ export function ContactSection() {
             <Card>
               <CardHeader>
                 <CardTitle className="font-playfair text-xl text-slate-800">
-                  Wyślij nam Wiadomość
+                  Wyślij mi Wiadomość
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -226,7 +228,7 @@ export function ContactSection() {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="W czym możemy pomóc?"
+                      placeholder="W czym mogę pomóc?"
                     />
                   </div>
 

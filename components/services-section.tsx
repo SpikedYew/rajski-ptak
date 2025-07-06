@@ -31,7 +31,7 @@ export function ServicesSection() {
     {
       name: "Dekoracje sali i kościoła",
       description: "Kompleksowa oprawa florystyczna uroczystości.",
-      price: "od 500 zł",
+      price: "od 2000 zł",
       features: [
         "Styl glamour, boho lub klasyczny",
         "Montaż i demontaż dekoracji",
@@ -67,7 +67,7 @@ export function ServicesSection() {
           className="text-center mb-12"
         >
           <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
-            Nasza oferta
+            Moja oferta
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Wybierz pakiet dopasowany do Twoich potrzeb.
@@ -109,9 +109,9 @@ export function ServicesSection() {
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                  {/* <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                     Dowiedz się więcej
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             </motion.div>

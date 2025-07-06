@@ -11,7 +11,7 @@ export function HeroSection() {
     >
       <div className="max-h-[60vh] md:max-h-screen overflow-hidden md:w-1/2 h-full inset-0 bg-cover bg-center bg-no-repeat">
         <Image
-          src="/1.jpg"
+          src="/maria/maria_gancarek.jpg"
           width={400}
           height={700}
           alt="xyz"
@@ -26,7 +26,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-4"
         >
-          Kwiaty, które mówią więcej
+          Twoja lokalna florystka w Stanowicach.
         </motion.h1>
 
         <motion.p
@@ -35,7 +35,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-playfair text-xl sm:text-2xl text-black/90 mb-6"
         >
-          Eleganckie kompozycje na każdą okazję
+          Eleganckie kompozycje na każdą okazję - <i>Maria Helena Gancarek</i>
         </motion.p>
 
         <motion.p

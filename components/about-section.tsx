@@ -21,9 +21,10 @@ export function AboutSection() {
               Poznaj moją pracownie florystyczną
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Tworzymy wyjątkowe kompozycje kwiatowe, które oddają charakter
-              każdej okazji. Każdy bukiet to połączenie pasji, natury i dobrego
-              stylu.
+              Energia płynąca z roślin i kwiatów wpływa na nasze samopoczucie.
+              Dzięki nim możemy wyrazić nasze uczucia i upiększyć najważniejsze
+              wydarzenia naszego życia. Wykonam dla Ciebie bukiet lub dekoracje
+              kwiatową na każdą okazję.
             </p>
 
             <div className="grid grid-cols-3 gap-6">
@@ -55,7 +56,7 @@ export function AboutSection() {
             className="relative"
           >
             <img
-              src="/2.jpg"
+              src="/maria/studio_2.jpg"
               alt="About our florist studio"
               className="rounded-lg shadow-lg w-full h-auto"
             />

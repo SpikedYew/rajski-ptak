@@ -8,19 +8,24 @@ import { X } from "lucide-react";
 
 const images = [
   {
-    src: "/4.jpg",
+    src: "/maria/bukiet_3.jpg",
     alt: "Bukiet ślubny z róż",
-    category: "Ślub",
+    category: "",
   },
   {
-    src: "/5.jpg",
+    src: "/maria/bukiet_roz.jpg",
     alt: "Dekoracja sali weselnej",
-    category: "Wesele",
+    category: "",
   },
   {
-    src: "/3.jpg",
+    src: "/maria/bukiet-rajski-ptak.jpg",
     alt: "Kompozycja kwiatowa na stół",
-    category: "Event",
+    category: "",
+  },
+  {
+    src: "/maria/bukiet.jpg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
   },
   // dodaj więcej zdjęć wg potrzeb
 ];

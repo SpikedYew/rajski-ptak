@@ -12,13 +12,14 @@ export function Footer() {
             Tworzymy piękno z natury – na każdą okazję
           </p>
           <p className="text-sm text-white/60">
+            <span>&copy; Rajski Ptak {new Date().getFullYear()}</span>
+            <br />
             <a
               target="_blank"
               href="https://www.bartoszchmielecki.com"
               rel="follow noopener"
             >
-              &copy; {new Date().getFullYear()} Strona DEMO, wykonanie - Bartosz
-              Chmielecki
+              wykonanie - Bartosz Chmielecki
             </a>
           </p>
         </div>

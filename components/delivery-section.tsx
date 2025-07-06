@@ -19,7 +19,7 @@ export function DeliverySection() {
             className="relative"
           >
             <img
-              src="/2.jpg"
+              src="/maria/pracownia-florystyczna.jpg"
               alt="About our florist studio"
               className="rounded-lg shadow-lg w-full h-auto"
             />
@@ -35,9 +35,8 @@ export function DeliverySection() {
               Poczta kwiatowa
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Tworzymy wyjątkowe kompozycje kwiatowe, które oddają charakter
-              każdej okazji. Każdy bukiet to połączenie pasji, natury i dobrego
-              stylu.
+              Zamów wyjątkowy bukiet z dostawą do Czerwionki, Leszczyn i okolic.
+              Kompozycje tworzone z pasją – dowóz na wskazany adres.
             </p>
 
             <div className="grid grid-cols-3 gap-6">
@@ -65,8 +64,10 @@ export function DeliverySection() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-center"
               >
-                <div className="font-playfair text-2xl sm:text-3xl font-bold text-green-600 mb-2"></div>
-                <div className="text-sm text-slate-600">+48 </div>
+                <div className="font-playfair text-2xl sm:text-3xl font-bold text-green-600 mb-2">
+                  <p className="min-w-[200px] text-xl">+48 797 372 993</p>
+                </div>
+                {/* <div className="text-sm text-slate-600">+48 797 372 993</div> */}
               </motion.div>
             </div>
           </motion.div>
