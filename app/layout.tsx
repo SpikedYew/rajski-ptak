@@ -41,6 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl" className="scroll-smooth">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Rajski Ptak" />
+      </head>
       <body
         className={`${inter.variable} ${playfair.variable} font-inter antialiased`}
       >
