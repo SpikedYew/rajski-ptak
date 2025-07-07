@@ -19,7 +19,7 @@ export function DeliverySection() {
             className="relative"
           >
             <img
-              src="/maria/pracownia-florystyczna.jpg"
+              src="/maria/12.jpeg"
               alt="About our florist studio"
               className="rounded-lg shadow-lg w-full h-auto"
             />

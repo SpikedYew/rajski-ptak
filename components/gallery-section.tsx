@@ -7,26 +7,26 @@ import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
 const images = [
-  {
-    src: "/maria/bukiet_3.jpg",
-    alt: "Bukiet ślubny z róż",
-    category: "",
-  },
-  {
-    src: "/maria/bukiet_roz.jpg",
-    alt: "Dekoracja sali weselnej",
-    category: "",
-  },
-  {
-    src: "/maria/bukiet-rajski-ptak.jpg",
-    alt: "Kompozycja kwiatowa na stół",
-    category: "",
-  },
-  {
-    src: "/maria/bukiet.jpg",
-    alt: "Kompozycja kwiatowa na stół",
-    category: "",
-  },
+  // {
+  //   src: "/maria/bukiet_3.jpg",
+  //   alt: "Bukiet ślubny z róż",
+  //   category: "",
+  // },
+  // {
+  //   src: "/maria/bukiet_roz.jpg",
+  //   alt: "Dekoracja sali weselnej",
+  //   category: "",
+  // },
+  // {
+  //   src: "/maria/bukiet-rajski-ptak.jpg",
+  //   alt: "Kompozycja kwiatowa na stół",
+  //   category: "",
+  // },
+  // {
+  //   src: "/maria/bukiet.jpg",
+  //   alt: "Kompozycja kwiatowa na stół",
+  //   category: "",
+  // },
   {
     src: "/maria/1.jpeg",
     alt: "Kompozycja kwiatowa na stół",

@@ -56,7 +56,7 @@ export function AboutSection() {
             className="relative"
           >
             <img
-              src="/maria/studio_2.jpg"
+              src="/maria/pracownia.jpeg"
               alt="About our florist studio"
               className="rounded-lg shadow-lg w-full h-auto"
             />
