@@ -27,6 +27,67 @@ const images = [
     alt: "Kompozycja kwiatowa na stół",
     category: "",
   },
+  {
+    src: "/maria/1.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/2.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/3.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/4.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/5.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/6.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/7.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+
+  {
+    src: "/maria/9.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/10.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/11.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/12.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
+  {
+    src: "/maria/13.jpeg",
+    alt: "Kompozycja kwiatowa na stół",
+    category: "",
+  },
   // dodaj więcej zdjęć wg potrzeb
 ];
 
@@ -45,7 +106,7 @@ export function GallerySection() {
           className="text-center mb-12"
         >
           <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
-            Nasze Realizacje
+            Moje Realizacje
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Zobacz przykładowe realizacje – bukiety, dekoracje i florystyka

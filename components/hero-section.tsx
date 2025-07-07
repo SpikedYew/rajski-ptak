@@ -7,15 +7,15 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden  md:max-h-screen flex flex-col md:flex-row-reverse items-center justify-center bg-white"
+      className="relative overflow-hidden  md:min-h-screen flex flex-col md:flex-row-reverse items-center justify-center bg-white"
     >
-      <div className="max-h-[60vh] md:max-h-screen overflow-hidden md:w-1/2 h-full inset-0 bg-cover bg-center bg-no-repeat">
+      <div className="max-h-[60vh] relative md:max-h-screen overflow-hidden md:w-1/2 h-full inset-0 bg-cover bg-center bg-no-repeat">
         <Image
-          src="/maria/maria_gancarek.jpg"
+          src="/maria/Maria.jpeg"
           width={400}
           height={700}
-          alt="xyz"
-          className="relative w-full h-full object-contain"
+          alt="Maria Helena Gancarek - Florystka"
+          className="relative w-full h-full object-cover"
         />
       </div>
 
