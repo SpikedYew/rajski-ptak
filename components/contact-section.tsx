@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export function ContactSection() {
   const ref = useRef(null);
@@ -20,10 +21,46 @@ export function ContactSection() {
     message: "",
   });
 
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted:", formData);
+  //   setFormData({ name: "", email: "", phone: "", message: "" });
+  // };
+
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     [e.target.name]: e.target.value,
+  //   }));
+  // };
+
+  const formRef = useRef<HTMLFormElement>(null);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", phone: "", message: "" });
+
+    if (!formRef.current) return;
+
+    emailjs
+      .sendForm(
+        "service_4sfool9", // <- zamień na swój ID z EmailJS
+        "template_qtznnnr", // <- zamień na swój template ID
+        formRef.current,
+        "wdXjMXLxWtjeDkVuz" // <- znajdziesz w dashboardzie EmailJS
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setFormData({ name: "", email: "", phone: "", message: "" });
+          alert("Wiadomość została wysłana!");
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Wystąpił błąd podczas wysyłania wiadomości.");
+        }
+      );
   };
 
   const handleChange = (
@@ -162,15 +199,14 @@ export function ContactSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  className="space-y-4"
+                >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label
-                        htmlFor="name"
-                        className="block text-sm font-medium text-slate-800 mb-1"
-                      >
-                        Imię *
-                      </label>
+                      <label htmlFor="name">Imię *</label>
                       <Input
                         id="name"
                         name="name"
@@ -181,12 +217,7 @@ export function ContactSection() {
                       />
                     </div>
                     <div>
-                      <label
-                        htmlFor="phone"
-                        className="block text-sm font-medium text-slate-800 mb-1"
-                      >
-                        Telefon
-                      </label>
+                      <label htmlFor="phone">Telefon</label>
                       <Input
                         id="phone"
                         name="phone"
@@ -198,12 +229,7 @@ export function ContactSection() {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-slate-800 mb-1"
-                    >
-                      Email *
-                    </label>
+                    <label htmlFor="email">Email *</label>
                     <Input
                       id="email"
                       name="email"
@@ -215,12 +241,7 @@ export function ContactSection() {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-sm font-medium text-slate-800 mb-1"
-                    >
-                      Wiadomość *
-                    </label>
+                    <label htmlFor="message">Wiadomość *</label>
                     <Textarea
                       id="message"
                       name="message"
@@ -228,7 +249,6 @@ export function ContactSection() {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="W czym mogę pomóc?"
                     />
                   </div>
 
