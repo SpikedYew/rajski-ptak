@@ -47,6 +47,10 @@ export default function RootLayout({
           name="google-site-verification"
           content="LRTb0uxY_v88Sy21Pozedau8ad80-FXT8qNUSSmRCRI"
         />
+        <meta
+          name="google-site-verification"
+          content="bFbk-ARgE6IT7E_y3u_pyfE3pAeGzmOGXbR72pSz9zY"
+        />
       </head>
       <body
         className={`${inter.variable} ${playfair.variable} font-inter antialiased`}
