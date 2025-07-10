@@ -11,7 +11,7 @@ export function HeroSection() {
     >
       <div className="max-h-[60vh] relative md:max-h-screen overflow-hidden md:w-1/2 h-full inset-0 bg-cover bg-center bg-no-repeat">
         <Image
-          src="/maria/Maria.jpeg"
+          src="/maria/maria_gancarek.webp"
           width={400}
           height={700}
           alt="Maria Helena Gancarek - Florystka"
